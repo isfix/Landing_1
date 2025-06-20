@@ -1,8 +1,7 @@
-
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Menu, X, ShoppingBag } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
@@ -17,11 +16,28 @@ const navLinks = [
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <header className="sticky top-0 z-50 w-full glassmorphic border-2 border-white/30">
+    <header className={cn(
+      "sticky top-0 z-50 w-full transition-all duration-300",
+      isScrolled ? "glassmorphic border-b border-white/20" : "bg-transparent"
+    )}>
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
-        <Link href="/" className="text-2xl sm:text-3xl font-bold text-primary-foreground hover:text-accent-foreground transition-colors font-headline">
+        <Link href="/" className={cn(
+          "text-2xl sm:text-3xl font-bold hover:text-primary transition-colors font-headline",
+          isScrolled ? "text-primary-foreground" : "text-white"
+        )}>
           Rune
         </Link>
         
@@ -30,13 +46,19 @@ export function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+              className={cn(
+                "text-sm font-medium hover:text-primary transition-colors",
+                isScrolled ? "text-foreground" : "text-white"
+              )}
             >
               {link.label}
             </Link>
           ))}
           <Link href="/shop" aria-label="Shopping Cart">
-             <ShoppingBag className="h-6 w-6 text-foreground hover:text-primary transition-colors" />
+             <ShoppingBag className={cn(
+               "h-6 w-6 hover:text-primary transition-colors",
+               isScrolled ? "text-foreground" : "text-white"
+             )} />
           </Link>
         </nav>
 
@@ -44,7 +66,7 @@ export function Header() {
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
-                <Menu className="h-7 w-7 text-foreground" />
+                <Menu className={cn("h-7 w-7", isScrolled ? "text-foreground" : "text-white")} />
                 <span className="sr-only">Open menu</span>
               </Button>
             </SheetTrigger>
