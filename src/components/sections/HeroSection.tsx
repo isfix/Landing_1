@@ -1,4 +1,3 @@
-
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
@@ -8,7 +7,7 @@ export function HeroSection() {
   return (
     <section className="relative w-full h-[calc(100vh-5rem)] min-h-[500px] md:min-h-[600px] flex items-center justify-center text-center overflow-hidden">
       <Image
-        src="https://i.ibb.co/qFxV4gM/hero-bg.jpg"
+        src="https://i.ibb.co/SwwNXKSs/image.png"
         alt="Rune Essence hero background"
         fill
         sizes="100vw"
@@ -17,7 +16,7 @@ export function HeroSection() {
         priority
         data-ai-hint="fashion model aesthetic"
       />
-      <div className="relative z-10 p-4 sm:p-6 max-w-3xl mx-auto glassmorphic rounded-xl animate-slideUp shadow-2xl">
+      <div className="relative z-10 p-4 sm:p-6 max-w-3xl mx-auto glassmorphic rounded-xl shadow-2xl">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-primary-foreground mb-6 font-headline" style={{ animationDelay: '0.2s' }}>
           Rune Essence
         </h1>
