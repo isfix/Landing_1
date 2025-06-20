@@ -1,6 +1,7 @@
+
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, use } from 'react'; // Imported use
 import Image from 'next/image';
 import { getProductBySlug } from '@/lib/products';
 import type { Product } from '@/lib/types';
@@ -16,15 +17,28 @@ import { useToast } from '@/hooks/use-toast';
 
 
 export default function ProductDetailPage({ params }: { params: { slug: string } }) {
+  // According to the error, 'params' is a Promise.
+  // We use React.use() to unwrap it and get the actual slug.
+  // The type annotation { slug: string } refers to the resolved value.
+  const { slug } = use(params);
+
   const [product, setProduct] = useState<Product | null | undefined>(undefined); // undefined for loading state
   const [selectedSize, setSelectedSize] = useState<string | null>(null);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const { toast } = useToast();
 
   useEffect(() => {
+    // 'slug' is the resolved string value from the params.
+    // If slug is not available (e.g., promise resolved to an unexpected structure), don't fetch.
+    if (!slug) {
+      // Potentially set an error state or log a warning if slug is crucial and missing.
+      // For now, if no slug, we simply don't proceed with fetching.
+      return;
+    }
+
     async function fetchProduct() {
       try {
-        const fetchedProduct = await getProductBySlug(params.slug);
+        const fetchedProduct = await getProductBySlug(slug); // Use the resolved slug
         setProduct(fetchedProduct);
         if (fetchedProduct?.imageUrl) {
           setSelectedImage(fetchedProduct.imageUrl);
@@ -40,7 +54,7 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
       }
     }
     fetchProduct();
-  }, [params.slug, toast]);
+  }, [slug, toast]); // Use the resolved 'slug' in the dependency array
 
   if (product === undefined) { // Loading state
     return (
