@@ -10,6 +10,7 @@ body {
   :root {
     --background: 0 0% 98%; /* #FAFAFA */
     --foreground: 240 10% 3.9%;
+    --hero-title: 45 86% 60%;
 
     --card: 0 0% 100%; /* Default white card */
     --card-foreground: 240 10% 3.9%;
@@ -57,6 +58,7 @@ body {
     /* Define dark theme colors if needed, for now, focusing on light theme */
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
+    --hero-title: 45 86% 70%;
 
     --card: 240 10% 3.9%;
     --card-foreground: 0 0% 98%;
