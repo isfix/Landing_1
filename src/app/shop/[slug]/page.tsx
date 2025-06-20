@@ -146,7 +146,7 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground font-headline animate-fadeIn" style={{ animationDelay: '0.1s' }}>
             {product.name}
           </h1>
-          <p className="text-3xl font-semibold text-primary animate-fadeIn" style={{ animationDelay: '0.2s' }}>
+          <p className="text-3xl font-semibold text-primary-foreground animate-fadeIn" style={{ animationDelay: '0.2s' }}>
             ${product.price.toFixed(2)}
           </p>
           <Separator className="animate-fadeIn" style={{ animationDelay: '0.25s' }}/>
