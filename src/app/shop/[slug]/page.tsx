@@ -104,7 +104,7 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
       <div className="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-start">
         {/* Image Gallery */}
         <div className="space-y-4 animate-fadeIn" style={{ animationDelay: '0.1s' }}>
-          <div className="aspect-[4/5] w-full overflow-hidden rounded-xl">
+          <div className="aspect-[4/5] w-full overflow-hidden rounded-xl border bg-white shadow-lg">
             <Image
               key={selectedImage} 
               src={selectedImage || product.imageUrl}
@@ -122,8 +122,8 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
                 <button
                   key={index}
                   onClick={() => setSelectedImage(img)}
-                  className={`group aspect-square overflow-hidden rounded-lg border-2 transition-all
-                              ${selectedImage === img ? 'border-primary ring-2 ring-primary ring-offset-background' : 'border-transparent hover:border-primary/50'}`}
+                  className={`group aspect-square overflow-hidden rounded-lg border-2 bg-white transition-all
+                              ${selectedImage === img ? 'border-primary ring-2 ring-primary ring-offset-background' : 'border-muted hover:border-primary/50'}`}
                 >
                   <div className="overflow-hidden w-full h-full rounded-md">
                     <Image
