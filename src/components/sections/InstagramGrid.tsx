@@ -2,12 +2,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const instagramImages = [
-  { id: 1, src: 'https://i.ibb.co/GHYyG3c/insta-1.png', alt: 'Instagram Post 1', hint: 'fashion lifestyle flatlay' },
-  { id: 2, src: 'https://i.ibb.co/fH7fXqP/insta-2.png', alt: 'Instagram Post 2', hint: 'clothing detail texture' },
-  { id: 3, src: 'https://i.ibb.co/k5yYVq6/insta-3.png', alt: 'Instagram Post 3', hint: 'model pose aesthetic' },
-  { id: 4, src: 'https://i.ibb.co/Wc2S5gY/insta-4.png', alt: 'Instagram Post 4', hint: 'accessory close-up chic' },
-  { id: 5, src: 'https://i.ibb.co/9Vw8Xn0/insta-5.png', alt: 'Instagram Post 5', hint: 'fashion store interior' },
-  { id: 6, src: 'https://i.ibb.co/rfnLqMw/insta-6.png', alt: 'Instagram Post 6', hint: 'textile pattern design' },
+  { id: 1, src: 'https://picsum.photos/seed/insta1/400/400', alt: 'Instagram Post 1', hint: 'fashion lifestyle flatlay' },
+  { id: 2, src: 'https://picsum.photos/seed/insta2/400/400', alt: 'Instagram Post 2', hint: 'clothing detail texture' },
+  { id: 3, src: 'https://picsum.photos/seed/insta3/400/400', alt: 'Instagram Post 3', hint: 'model pose aesthetic' },
+  { id: 4, src: 'https://picsum.photos/seed/insta4/400/400', alt: 'Instagram Post 4', hint: 'accessory close-up chic' },
+  { id: 5, src: 'https://picsum.photos/seed/insta5/400/400', alt: 'Instagram Post 5', hint: 'fashion store interior' },
+  { id: 6, src: 'https://picsum.photos/seed/insta6/400/400', alt: 'Instagram Post 6', hint: 'textile pattern design' },
 ];
 
 export function InstagramGrid() {

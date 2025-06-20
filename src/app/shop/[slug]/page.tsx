@@ -125,7 +125,7 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
                   className={`group aspect-square overflow-hidden rounded-lg border-2 bg-white transition-all
                               ${selectedImage === img ? 'border-primary ring-2 ring-primary ring-offset-background' : 'border-muted hover:border-primary/50'}`}
                 >
-                  <div className="overflow-hidden w-full h-full rounded-md">
+                  <div className="overflow-hidden w-full h-full rounded-md border shadow-sm">
                     <Image
                       src={img}
                       alt={`${product.name} - view ${index + 1}`}

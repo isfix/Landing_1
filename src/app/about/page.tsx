@@ -10,7 +10,7 @@ export default function AboutPage() {
         
         <div className="relative aspect-video mb-10 md:mb-12 rounded-xl overflow-hidden shadow-xl">
           <Image 
-            src="https://i.ibb.co/8M0yLR3/about-us.png" 
+            src="https://picsum.photos/seed/about/1280/720" 
             alt="Rune Essence Brand Aesthetic" 
             layout="fill" 
             objectFit="cover"
