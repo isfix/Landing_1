@@ -10,7 +10,7 @@ export default function AboutPage() {
         
         <div className="relative aspect-video mb-10 md:mb-12 rounded-xl overflow-hidden shadow-xl">
           <Image 
-            src="https://placehold.co/1200x675.png" 
+            src="https://i.ibb.co/8M0yLR3/about-us.png" 
             alt="Rune Essence Brand Aesthetic" 
             layout="fill" 
             objectFit="cover"
