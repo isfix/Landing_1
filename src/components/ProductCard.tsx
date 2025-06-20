@@ -11,7 +11,7 @@ interface ProductCardProps {
 
 export function ProductCard({ product }: ProductCardProps) {
   return (
-    <Card className="overflow-hidden rounded-xl glassmorphic transform transition-all duration-300 hover:shadow-subtle hover:-translate-y-1 h-full flex flex-col animate-fadeIn">
+    <Card className="overflow-hidden rounded-xl transform transition-all duration-300 hover:shadow-subtle hover:-translate-y-1 h-full flex flex-col animate-fadeIn bg-background/50 shadow-xl hover:shadow-2xl">
       <Link href={`/shop/${product.slug}`} className="block group h-full flex flex-col">
         <CardHeader className="p-0 relative aspect-[3/4] overflow-hidden">
           <Image

@@ -104,7 +104,7 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
       <div className="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-start">
         {/* Image Gallery */}
         <div className="space-y-4 animate-fadeIn" style={{ animationDelay: '0.1s' }}>
-          <div className="aspect-[4/5] w-full overflow-hidden rounded-xl glassmorphic">
+          <div className="aspect-[4/5] w-full overflow-hidden rounded-xl">
             <Image
               key={selectedImage} 
               src={selectedImage || product.imageUrl}
@@ -201,4 +201,3 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
     </div>
   );
 }
-
