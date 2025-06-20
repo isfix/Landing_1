@@ -20,7 +20,7 @@ export function HeroSection() {
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-primary-foreground mb-6 font-headline" style={{ animationDelay: '0.2s' }}>
           Rune Essence
         </h1>
-        <p className="text-lg sm:text-xl text-white mb-8 max-w-xl mx-auto" style={{ animationDelay: '0.4s' }}>
+        <p className="text-lg sm:text-xl text-gray-200 mb-8 max-w-xl mx-auto" style={{ animationDelay: '0.4s' }}>
           Timeless pieces for the modern woman. Discover elegance in simplicity.
         </p>
         <div style={{ animationDelay: '0.6s' }}>
