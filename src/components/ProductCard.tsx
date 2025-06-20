@@ -24,7 +24,7 @@ export function ProductCard({ product }: ProductCardProps) {
           />
         </CardHeader>
         <CardContent className="p-4 sm:p-6 flex-grow">
-          <CardTitle className="text-lg md:text-xl font-medium text-foreground mb-1 group-hover:text-primary transition-colors">
+          <CardTitle className="text-lg md:text-xl font-medium text-foreground mb-1 transition-colors">
             {product.name}
           </CardTitle>
           <p className="text-sm text-muted-foreground line-clamp-2">
@@ -35,7 +35,7 @@ export function ProductCard({ product }: ProductCardProps) {
           <p className="text-xl font-semibold text-primary-foreground">
             ${product.price.toFixed(2)}
           </p>
-          <Button variant="ghost" size="sm" className="text-primary group-hover:underline">
+          <Button variant="ghost" size="sm" className="text-primary-foreground">
             View Details <ArrowRight className="ml-1 h-4 w-4" />
           </Button>
         </CardFooter>
