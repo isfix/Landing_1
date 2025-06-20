@@ -8,7 +8,7 @@ export function HeroSection() {
   return (
     <section className="relative w-full h-[calc(100vh-5rem)] min-h-[500px] md:min-h-[600px] flex items-center justify-center text-center overflow-hidden">
       <Image
-        src="https://i.ibb.co/9vVvWfD/hero-bg.jpg"
+        src="https://i.ibb.co/qFxV4gM/hero-bg.jpg"
         alt="Rune Essence hero background"
         fill
         sizes="100vw"
