@@ -25,7 +25,7 @@ export function HeroSection() {
           Timeless pieces for the modern woman. Discover elegance in simplicity.
         </p>
         <div style={{ animationDelay: '0.6s' }}>
-          <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 px-8 py-3">
+          <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 px-8 py-3">
             <Link href="/shop">
               Shop Collection
               <ArrowRight className="ml-2 h-5 w-5" />
