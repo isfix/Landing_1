@@ -17,7 +17,7 @@ export function HeroSection() {
         priority
         data-ai-hint="fashion model aesthetic"
       />
-      <div className="relative z-10 p-4 sm:p-6 max-w-3xl mx-auto bg-black/30 backdrop-blur-sm rounded-xl animate-slideUp border border-white/20 shadow-lg">
+      <div className="relative z-10 p-4 sm:p-6 max-w-3xl mx-auto bg-black/30 backdrop-blur-sm rounded-xl animate-slideUp border-2 border-white/30 shadow-lg">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white mb-6 font-headline" style={{ animationDelay: '0.2s' }}>
           Rune Essence
         </h1>
@@ -36,3 +36,4 @@ export function HeroSection() {
     </section>
   );
 }
+
