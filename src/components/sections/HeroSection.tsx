@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
@@ -9,11 +10,11 @@ export function HeroSection() {
       <Image
         src="https://placehold.co/1920x1080.png"
         alt="Rune Essence Brand Hero Image"
-        layout="fill"
-        objectFit="cover"
+        fill
+        sizes="100vw"
+        className="object-cover brightness-75"
         quality={90}
         priority
-        className="brightness-75"
         data-ai-hint="fashion model aesthetic"
       />
       <div className="relative z-10 p-6 max-w-3xl mx-auto bg-black/30 backdrop-blur-sm rounded-xl">
