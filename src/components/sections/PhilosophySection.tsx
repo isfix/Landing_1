@@ -14,21 +14,21 @@ export function PhilosophySection() {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 text-center">
-          <div className="flex flex-col items-center p-6 rounded-xl transition-all duration-300 hover:bg-background/50 hover:shadow-subtle">
+          <div className="flex flex-col items-center p-6 rounded-xl transition-all duration-300 bg-background/50 shadow-lg hover:shadow-xl">
             <div className="mb-4 bg-primary/50 p-4 rounded-full">
               <Leaf className="h-8 w-8 text-primary-foreground" />
             </div>
             <h3 className="text-xl font-semibold text-foreground mb-2">Ethical Materials</h3>
             <p className="text-muted-foreground">Sourced with care for a gentle impact on the earth.</p>
           </div>
-          <div className="flex flex-col items-center p-6 rounded-xl transition-all duration-300 hover:bg-background/50 hover:shadow-subtle">
+          <div className="flex flex-col items-center p-6 rounded-xl transition-all duration-300 bg-background/50 shadow-lg hover:shadow-xl">
              <div className="mb-4 bg-primary/50 p-4 rounded-full">
               <Feather className="h-8 w-8 text-primary-foreground" />
             </div>
             <h3 className="text-xl font-semibold text-foreground mb-2">Lightweight Comfort</h3>
             <p className="text-muted-foreground">Crafted for a 'barely there' feel and effortless movement.</p>
           </div>
-          <div className="flex flex-col items-center p-6 rounded-xl transition-all duration-300 hover:bg-background/50 hover:shadow-subtle">
+          <div className="flex flex-col items-center p-6 rounded-xl transition-all duration-300 bg-background/50 shadow-lg hover:shadow-xl">
             <div className="mb-4 bg-primary/50 p-4 rounded-full">
                <Droplets className="h-8 w-8 text-primary-foreground" />
             </div>
