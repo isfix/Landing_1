@@ -7,7 +7,7 @@ export function HeroSection() {
   return (
     <section className="relative w-full h-[calc(100vh-5rem)] min-h-[500px] md:min-h-[600px] flex items-center justify-center text-center overflow-hidden">
       <Image
-        src="https://i.ibb.co/BK79PZFq/image-2.png"
+        src="https://i.ibb.co/BK79PZF/image-2.png"
         alt="Rune Essence hero background"
         fill
         sizes="100vw"
@@ -17,7 +17,7 @@ export function HeroSection() {
         data-ai-hint="fashion model aesthetic"
       />
       <div className="relative z-10 p-4 sm:p-6 max-w-3xl mx-auto glassmorphic rounded-xl shadow-2xl">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-hero-title mb-6 font-headline" style={{ animationDelay: '0.2s' }}>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-primary-foreground mb-6 font-headline" style={{ animationDelay: '0.2s' }}>
           Rune Essence
         </h1>
         <p className="text-lg sm:text-xl text-white mb-8 max-w-xl mx-auto" style={{ animationDelay: '0.4s' }}>
