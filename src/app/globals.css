@@ -126,7 +126,7 @@ body {
 
 @layer components {
   .glassmorphic {
-    @apply bg-card/60 backdrop-blur-lg border border-white/20 shadow-lg;
+    @apply bg-card/10 backdrop-blur-lg border border-white/20 shadow-lg;
   }
   .soft-shadow {
     @apply shadow-xl shadow-primary/10;
