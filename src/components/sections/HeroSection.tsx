@@ -8,8 +8,8 @@ export function HeroSection() {
   return (
     <section className="relative w-full h-[calc(100vh-5rem)] min-h-[500px] md:min-h-[600px] flex items-center justify-center text-center overflow-hidden">
       <Image
-        src="https://picsum.photos/1200/800"
-        alt="Placeholder image"
+        src="https://i.ibb.co/S7XZKTQG/image.png"
+        alt="Rune Essence hero background"
         fill
         sizes="100vw"
         className="object-cover brightness-75"
