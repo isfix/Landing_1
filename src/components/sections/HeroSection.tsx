@@ -8,7 +8,7 @@ export function HeroSection() {
   return (
     <section className="relative w-full h-[calc(100vh-5rem)] min-h-[500px] md:min-h-[600px] flex items-center justify-center text-center overflow-hidden">
       <Image
-        src="https://picsum.photos/seed/hero/1920/1080"
+        src="https://i.ibb.co/9vVvWfD/hero-bg.jpg"
         alt="Rune Essence hero background"
         fill
         sizes="100vw"
@@ -21,7 +21,7 @@ export function HeroSection() {
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-primary-foreground mb-6 font-headline" style={{ animationDelay: '0.2s' }}>
           Rune Essence
         </h1>
-        <p className="text-lg sm:text-xl text-foreground/80 mb-8 max-w-xl mx-auto" style={{ animationDelay: '0.4s' }}>
+        <p className="text-lg sm:text-xl text-white mb-8 max-w-xl mx-auto" style={{ animationDelay: '0.4s' }}>
           Timeless pieces for the modern woman. Discover elegance in simplicity.
         </p>
         <div style={{ animationDelay: '0.6s' }}>
