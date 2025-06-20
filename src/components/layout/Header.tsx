@@ -20,7 +20,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full glassmorphic">
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
-        <Link href="/" className="text-3xl font-bold text-primary-foreground hover:text-accent-foreground transition-colors font-headline">
+        <Link href="/" className="text-2xl sm:text-3xl font-bold text-primary-foreground hover:text-accent-foreground transition-colors font-headline">
           Rune
         </Link>
         
